@@ -1,0 +1,64 @@
+﻿<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.App">
+    <!-- Application Resource Dictionary -->
+    <Application.Resources>
+        <!-- Resource Dictionary to define UI elements styles -->
+        <ResourceDictionary>
+            <!-- Style for Function Buttons (e.g., C, +/-, %) -->
+            <Style x:Key="FunctionButton" TargetType="Button">
+                <Setter Property="CornerRadius" Value="36"/>
+                <Setter Property="BackgroundColor" Value="#a5a5a5"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="36"/>
+            </Style>
+            <!-- Style for Operation Buttons (e.g., +, -, *, /) -->
+            <Style x:Key="OperationButton" TargetType="Button">
+                <Setter Property="CornerRadius" Value="36"/>
+                <Setter Property="BackgroundColor" Value="#ff9500"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="36"/>
+            </Style>
+            <!-- Style for Number Buttons (0-9) -->
+            <Style x:Key="NumberButton" TargetType="Button">
+                <Setter Property="CornerRadius" Value="36"/>
+                <Setter Property="BackgroundColor" Value="#333333"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="36"/>
+            </Style>
+            <!-- Style for the Calculator Display -->
+            <Style x:Key="CalcDisplay" TargetType="Label">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="#000000"/>
+                <Setter Property="HorizontalTextAlignment" Value="End"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="60"/>
+                <Setter Property="HeightRequest" Value="120"/>
+            </Style>
+            <!-- Style for Function Button Pressed State -->
+            <Style x:Key="FunctionButtonPressed" TargetType="Button">
+                <Setter Property="CornerRadius" Value="36"/>
+                <Setter Property="BackgroundColor" Value="#d5d5d5"/>
+                <Setter Property="FontSize" Value="36"/>
+            </Style>
+            <!-- Style for Operation Button Pressed State -->
+            <Style x:Key="OperationButtonPressed" TargetType="Button">
+                <Setter Property="CornerRadius" Value="36"/>
+                <Setter Property="BackgroundColor" Value="#ffab49"/>
+                <Setter Property="FontSize" Value="36"/>
+            </Style>
+            <!-- Style for Number Button Pressed State -->
+            <Style x:Key="NumberButtonPressed" TargetType="Button">
+                <Setter Property="CornerRadius" Value="36"/>
+                <Setter Property="BackgroundColor" Value="#505050"/>
+                <Setter Property="FontSize" Value="36"/>
+            </Style>
+            <!-- Style for Operation Button Selected State (e.g., during current operation) -->
+            <Style x:Key="OperationButtonSelected" TargetType="Button">
+                <Setter Property="CornerRadius" Value="36"/>
+                <Setter Property="BackgroundColor" Value="#ffb84d"/>
+                <Setter Property="FontSize" Value="36"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage"
+             BackgroundColor="#000000">
+
+    <!-- Main layout grid with two rows: one for display and one for buttons -->
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/> <!-- Display section taking up 1/5 of the space -->
+            <RowDefinition Height="4*"/> <!-- Button grid taking the remaining space -->
+        </Grid.RowDefinitions>
+
+        <!-- Calculator display area -->
+        <Label Grid.Row="0" x:Name="Display" Text="0" Style="{StaticResource CalcDisplay}" Margin="10">
+            <!-- Gesture recognizer for swipe-to-delete functionality -->
+            <Label.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipeLeft"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+        <!-- Button grid -->
+        <Grid Grid.Row="1" x:Name="ButtonGrid" ColumnSpacing="10" RowSpacing="10" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <!-- Define rows and columns for the calculator buttons -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/> <!-- Each row takes equal space -->
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/> <!-- Each column takes equal space -->
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Row 0: AC, +/-, %, ÷ -->
+            <Button Text="AC" Grid.Row="0" Grid.Column="0" Style="{StaticResource FunctionButton}" Clicked="OnClear"/>
+            <Button Text="+/-" Grid.Row="0" Grid.Column="1" Style="{StaticResource FunctionButton}" Clicked="OnChangeSign"/>
+            <Button Text="DEL" Grid.Row="0" Grid.Column="2" Style="{StaticResource FunctionButton}" Clicked="OnDelete"/>
+            <Button Text="÷" Grid.Row="0" Grid.Column="3" Style="{StaticResource OperationButton}" Clicked="OnSelectOperator"/>
+
+            <!-- Row 1: 7, 8, 9, x -->
+            <Button Text="7" Grid.Row="1" Grid.Column="0" Style="{StaticResource NumberButton}" Clicked="OnSelectNumber"/>
+            <Button Text="8" Grid.Row="1" Grid.Column="1" Style="{StaticResource NumberButton}" Clicked="OnSelectNumber"/>
+            <Button Text="9" Grid.Row="1" Grid.Column="2" Style="{StaticResource NumberButton}" Clicked="OnSelectNumber"/>
+            <Button Text="x" Grid.Row="1" Grid.Column="3" Style="{StaticResource OperationButton}" Clicked="OnSelectOperator"/>
+
+            <!-- Row 2: 4, 5, 6, - -->
+            <Button Text="4" Grid.Row="2" Grid.Column="0" Style="{StaticResource NumberButton}" Clicked="OnSelectNumber"/>
+            <Button Text="5" Grid.Row="2" Grid.Column="1" Style="{StaticResource NumberButton}" Clicked="OnSelectNumber"/>
+            <Button Text="6" Grid.Row="2" Grid.Column="2" Style="{StaticResource NumberButton}" Clicked="OnSelectNumber"/>
+            <Button Text="-" Grid.Row="2" Grid.Column="3" Style="{StaticResource OperationButton}" Clicked="OnSelectOperator"/>
+
+            <!-- Row 3: 1, 2, 3, + -->
+            <Button Text="1" Grid.Row="3" Grid.Column="0" Style="{StaticResource NumberButton}" Clicked="OnSelectNumber"/>
+            <Button Text="2" Grid.Row="3" Grid.Column="1" Style="{StaticResource NumberButton}" Clicked="OnSelectNumber"/>
+            <Button Text="3" Grid.Row="3" Grid.Column="2" Style="{StaticResource NumberButton}" Clicked="OnSelectNumber"/>
+            <Button Text="+" Grid.Row="3" Grid.Column="3" Style="{StaticResource OperationButton}" Clicked="OnSelectOperator"/>
+
+            <!-- Row 4: 0, ., = -->
+            <Button Text="0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource NumberButton}" Clicked="OnSelectNumber"/> <!-- Zero button with column span -->
+            <Button Text="." Grid.Row="4" Grid.Column="2" Style="{StaticResource NumberButton}" Clicked="OnSelectNumber"/>
+            <Button Text="=" Grid.Row="4" Grid.Column="3" Style="{StaticResource OperationButton}" Clicked="OnCalculate"/>
+        </Grid>
+    </Grid>
+</ContentPage>

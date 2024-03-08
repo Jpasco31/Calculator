@@ -1,0 +1,1 @@
+C:\Users\tumam\source\repos\Calculator\Calculator\Calculator.csproj;x64

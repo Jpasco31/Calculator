@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tumam\\source\\repos\\Calculator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E990FAFA-D5CB-4A53-B9EC-74C1A4BDD6D0}|Calculator\\Calculator.csproj|c:\\users\\tumam\\source\\repos\\calculator\\calculator\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E990FAFA-D5CB-4A53-B9EC-74C1A4BDD6D0}|Calculator\\Calculator.csproj|solutionrelative:calculator\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E990FAFA-D5CB-4A53-B9EC-74C1A4BDD6D0}|Calculator\\Calculator.csproj|c:\\users\\tumam\\source\\repos\\calculator\\calculator\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E990FAFA-D5CB-4A53-B9EC-74C1A4BDD6D0}|Calculator\\Calculator.csproj|solutionrelative:calculator\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E990FAFA-D5CB-4A53-B9EC-74C1A4BDD6D0}|Calculator\\Calculator.csproj|c:\\users\\tumam\\source\\repos\\calculator\\calculator\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E990FAFA-D5CB-4A53-B9EC-74C1A4BDD6D0}|Calculator\\Calculator.csproj|solutionrelative:calculator\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\tumam\\source\\repos\\Calculator\\Calculator\\App.xaml",
+              "RelativeDocumentMoniker": "Calculator\\App.xaml",
+              "ToolTip": "C:\\Users\\tumam\\source\\repos\\Calculator\\Calculator\\App.xaml",
+              "RelativeToolTip": "Calculator\\App.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-29T04:07:09.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\tumam\\source\\repos\\Calculator\\Calculator\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Calculator\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\tumam\\source\\repos\\Calculator\\Calculator\\MainPage.xaml",
+              "RelativeToolTip": "Calculator\\MainPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-29T04:07:02.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tumam\\source\\repos\\Calculator\\Calculator\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Calculator\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\tumam\\source\\repos\\Calculator\\Calculator\\MainPage.xaml.cs",
+              "RelativeToolTip": "Calculator\\MainPage.xaml.cs",
+              "ViewState": "AQIAAM4AAAAAZmZmZmYewLAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-29T04:11:12.234Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
